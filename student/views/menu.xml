@@ -1,0 +1,12 @@
+<odoo>
+  <data>
+
+    <menuitem id="school_root_menu" name="School Management"/>
+
+    <menuitem id="menu_student" name="Students" parent="school_root_menu" /> <!--#action="action_student"/>  -->
+    <menuitem id="menu_guardian" name="Guardians" parent="school_root_menu"/> <!-- action="action_guardian" -->
+    <menuitem id="menu_course" name="Courses" parent="school_root_menu"/> <!--action="action_course"-->
+
+
+  </data>
+</odoo>
