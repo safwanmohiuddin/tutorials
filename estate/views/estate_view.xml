@@ -55,11 +55,11 @@
 
     <!-- MENUS -->
     <menuitem id="menu_estate_root"
-              name="Real Estate"
+              name="Real Estate Demo"
               sequence="10"/>
 
     <menuitem id="menu_estate_main"
-              name="Properties"
+              name="Properties_demo"
               parent="menu_estate_root"
               sequence="20"/>
 

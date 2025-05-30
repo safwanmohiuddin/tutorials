@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+
+        <!-- Form View -->
+        <record id="guardian_form_view" model="ir.ui.view">
+            <field name="name">student.guardian.form</field>
+            <field name="model">student.guardian</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="guardian_name"/>
+                            <field name="guardian_number"/>
+                            <field name="relation"/>
+                            <field name="student"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- List View -->
+        <record id="guardian_list_view" model="ir.ui.view">
+            <field name="name">student.guardian.list</field>
+            <field name="model">student.guardian</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="guardian_name"/>
+                    <field name="guardian_number"/>
+                    <field name="relation"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="guardian_action" model="ir.actions.act_window">
+            <field name="name">Guardians</field>
+            <field name="res_model">student.guardian</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="guardian_menu" name="Guardians" parent="student_menu_root" action="guardian_action"/>
+
+    </data>
+</odoo>
